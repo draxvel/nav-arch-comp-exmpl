@@ -1,1 +1,0 @@
-# nav-arch-comp-exmpl
