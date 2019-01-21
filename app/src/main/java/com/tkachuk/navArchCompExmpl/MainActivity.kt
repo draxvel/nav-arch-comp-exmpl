@@ -1,4 +1,4 @@
-package com.tkachuk.nav_arch_comp_exmpl
+package com.tkachuk.navArchCompExmpl
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
