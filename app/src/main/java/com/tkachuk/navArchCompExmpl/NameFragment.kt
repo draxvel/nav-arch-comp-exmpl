@@ -17,7 +17,12 @@ class NameFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        nametv.text = arguments?.getString("nameArg")
+        val text = NameFragmentArgs.fromBundle(arguments!!).nameArg
+
+        nametv.text = text
     }
+
+
+//    nametv.text = arguments?.getString("nameArg")
 
 }

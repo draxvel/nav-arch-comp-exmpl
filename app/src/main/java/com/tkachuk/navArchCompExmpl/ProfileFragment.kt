@@ -19,14 +19,20 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button.setOnClickListener {
-            val nameBundle = Bundle()
-            nameBundle.putString("nameArg", editText.text.toString())
+            val action=
+                    ProfileFragmentDirections.actionProfileFragmentToNameFragment()
 
-            it.findNavController().navigate(
-                    R.id.action_profileFragment_to_nameFragment,
-                    nameBundle)
+            it.findNavController().navigate(action.setNameArg(editText.text.toString()))
         }
 
     }
+
+    //            val nameBundle = Bundle()
+//            nameBundle.putString("nameArg", editText.text.toString())
+//
+//            it.findNavController().navigate(
+//                    R.id.action_profileFragment_to_nameFragment,
+//                    nameBundle)
+
 
 }
