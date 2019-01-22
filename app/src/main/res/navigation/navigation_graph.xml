@@ -22,11 +22,26 @@
         android:id="@+id/profileFragment"
         android:name="com.tkachuk.navArchCompExmpl.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.tkachuk.navArchCompExmpl.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.tkachuk.navArchCompExmpl.NameFragment"
+        android:label="fragment_name"
+        tools:layout="@layout/fragment_name" >
+
+        <argument
+            android:name="nameArg"
+            android:defaultValue=" "
+            app:argType="string"/>
+    </fragment>
 </navigation>
