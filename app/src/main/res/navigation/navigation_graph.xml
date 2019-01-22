@@ -32,7 +32,12 @@
         android:id="@+id/settingsFragment"
         android:name="com.tkachuk.navArchCompExmpl.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="app://settings"
+            android:autoVerify="true" />
+    </fragment>
     <fragment
         android:id="@+id/nameFragment"
         android:name="com.tkachuk.navArchCompExmpl.NameFragment"
